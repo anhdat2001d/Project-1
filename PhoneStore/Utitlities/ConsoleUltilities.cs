@@ -62,30 +62,30 @@ namespace Ults
         static Dictionary<int, List<string>> menuTab = new Dictionary<int, List<string>>();
         static List<string> sList = new List<string>();
         static List<string> listPhone = new List<string>() { "iphone x", "xs", "xs max", "ip 11", "ip 12", "ip 13", "ip 14", "ip 15", "ip 16", "ip 17", "ip 18", "ip 19", "ip 20" };
-        public static Dictionary<int, List<string>> SellerMenuUI()
+        public static Dictionary<int, List<string>> SellerMenuHandle()
         {
             int phoneQuantity = listPhone.Count(), itemInTab = 4, numberOfTab = 0, count = 1, secondCount = 1, idTab = 0;
 
-            if (phoneQuantity % itemInTab != 0) numberOfTab = (phoneQuantity / itemInTab) + 1;
+            if (phoneQuantity % itemInTab != 0) numberOfTab = (phoneQuantity / itemInTab) + 1; // nếu phoneQuantity chia dư cho itemInTab thì + thêm 1, ex: có 13 phone và mỗi tab hiển thị 3 phone thì chia ra được 4.3 vì là kiểu int nên sẽ là 4 + 1 = 5 
             else numberOfTab = phoneQuantity / itemInTab;
 
-            foreach (string phone in listPhone)
+            foreach (string phone in listPhone) // 1. tạo vòng for để add phone vào sList và sử lí logic
             {
-                if ((count - 1) == itemInTab)
+                if ((count - 1) == itemInTab) 
                 {
-                    sList = new List<string>();
-                    count = 1;
+                    sList = new List<string>(); // khởi tạo lại list mới khi add đứng số lượng phone = itemInTab vào sList
+                    count = 1; // gán lại count = 1 sau khi add đứng số lượng phone = itemInTab số lượng phone vào sList
                 }
                 sList.Add(phone);
-                if (sList.Count() == itemInTab)
+                if (sList.Count() == itemInTab) 
                 {
-                    idTab++;
-                    menuTab.Add(idTab, sList);
+                    idTab++; 
+                    menuTab.Add(idTab, sList);  // add idTab và sList vào menutab (sList ở đây có số lượng phần tử = itemInTab)
                 }
-                else if (sList.Count() < itemInTab && secondCount == phoneQuantity)
+                else if (sList.Count() < itemInTab && secondCount == phoneQuantity) // second count là biến đếm số lần chạy của vòng lặp nếu nó = số lượng điện thoại => lần cuối cùng vòng lặp chạy
                 {
                     idTab++;
-                    menuTab.Add(idTab, sList);
+                    menuTab.Add(idTab, sList); // thêm nốt idTab và sList còn lại vào menuTab
                 }
                 secondCount++;
                 count++;
