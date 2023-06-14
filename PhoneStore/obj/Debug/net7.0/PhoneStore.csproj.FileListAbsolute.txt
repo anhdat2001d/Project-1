@@ -58,3 +58,24 @@ C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\refint\PhoneStor
 C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.pdb
 C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.genruntimeconfig.cache
 C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\ref\PhoneStore.dll
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.exe
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.deps.json
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.runtimeconfig.json
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.dll
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.pdb
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\bin\Debug\net7.0\MySql.Data.dll
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\bin\Debug\net7.0\MySQLConnection.dll
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\bin\Debug\net7.0\ThreeLayerLibrary.dll
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\bin\Debug\net7.0\ThreeLayerLibrary.pdb
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.AssemblyReference.cache
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.AssemblyInfoInputs.cache
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.AssemblyInfo.cs
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.CoreCompileInputs.cache
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.CopyComplete
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.dll
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\refint\PhoneStore.dll
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.pdb
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.genruntimeconfig.cache
+C:\Users\Window 10 NT\Documents\Project-1\PhoneStore\obj\Debug\net7.0\ref\PhoneStore.dll

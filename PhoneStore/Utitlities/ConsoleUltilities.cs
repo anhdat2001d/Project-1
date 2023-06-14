@@ -1,3 +1,4 @@
+using System;
 namespace Ults
 {
     static class ConsoleUlts
@@ -17,9 +18,9 @@ namespace Ults
             LoginMenuUI();
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.Write(@"👉 User Name: ");
-            string userName = Console.ReadLine();
+            string userName = Console.ReadLine()??"";
             Console.Write(@"👉 Password: ");
-            string pwd = Console.ReadLine();
+            string pwd = Console.ReadLine()??"";
             return 1;
         }
         public static bool PressEnterToContinue()
@@ -63,7 +64,7 @@ namespace Ults
         static List<string> listPhone = new List<string>() { "iphone x", "xs", "xs max", "ip 11", "ip 12", "ip 13", "ip 14", "ip 15", "ip 16", "ip 17", "ip 18", "ip 19", "ip 20" };
         public static Dictionary<int, List<string>> SellerMenuUI()
         {
-            int phoneQuantity = listPhone.Count(), itemInTab = 10, numberOfTab = 0, count = 1, secondCount = 1, idTab = 0;
+            int phoneQuantity = listPhone.Count(), itemInTab = 4, numberOfTab = 0, count = 1, secondCount = 1, idTab = 0;
 
             if (phoneQuantity % itemInTab != 0) numberOfTab = (phoneQuantity / itemInTab) + 1;
             else numberOfTab = phoneQuantity / itemInTab;
@@ -90,6 +91,34 @@ namespace Ults
                 count++;
             }
             return menuTab;
+        }
+        public static void DisplayListPhone(){
+            Dictionary<int, List<string>> phones = SellerMenuUI();
+            int countPage = phones.Count();
+            int currentPage = 1;
+            Console.WriteLine(countPage);
+            ConsoleKeyInfo input = new ConsoleKeyInfo();
+            while(true){
+ 
+                    foreach(var phone in phones[currentPage])Console.WriteLine(phone);
+                    input = Console.ReadKey();
+                if(currentPage <= countPage){
+                if(input.Key == ConsoleKey.RightArrow){
+                    if(currentPage <= countPage -1)currentPage++;
+                }
+                if(input.Key == ConsoleKey.LeftArrow){
+                    if(currentPage > 1){currentPage--;
+                }
+                }
+                if(input.Key == ConsoleKey.Spacebar){
+                    break;
+                }
+                
+                Console.Clear();
+                
+            }
+        }
+        Console.WriteLine("Thoat hien thi danh sach dien thoai");
         }
         public static void Notification(string message) // thông báo
         {

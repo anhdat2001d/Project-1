@@ -15,13 +15,13 @@ namespace PhoneStoreUI
             int loginAccount = ConsoleUlts.Login();
             if (loginAccount == 1)
             {
-                foreach (var item in ConsoleUlts.SellerMenuUI())
-                {
-                    for (var i = 0; i < item.Value.Count(); i++)
-                    {
-                        Console.WriteLine("Tab: " + item.Key + ", Phone: " + item.Value[i]);
-                    }
-                }
+                // foreach (var item in ConsoleUlts.SellerMenuUI())
+                // {
+                //     for (var i = 0; i < item.Value.Count(); i++)
+                //     {
+                //         Console.WriteLine("Tab: " + item.Key + ", Phone: " + item.Value[i]);
+                //     }
+                // }
             }
             else if (loginAccount == 2)
             {
@@ -29,6 +29,7 @@ namespace PhoneStoreUI
             }
             else if (loginAccount == 3) ConsoleUlts.Notification("Exiting Suscess");
             else ConsoleUlts.Notification("Invalid choice");
+            Ults.ConsoleUlts.DisplayListPhone();
         }
     }
 }
