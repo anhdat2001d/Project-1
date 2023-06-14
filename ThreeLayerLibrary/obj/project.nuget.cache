@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "wuVMRffWVsfT0Gko66yJZ5MBuMfnNbOmSi/78piK8mNV4Sihy6KAVAwBXLsxa+arR6zWAvMsfWHJjtC/Q6SC+w==",
+  "dgSpecHash": "A8j3DsnxtqdKwBCELPF/CGkKffZ0dvoJ0ue7zVk8lNk+n+JHgPbgyhqtAxc0JOr3gV8o3DU4h2wh1lXm845pcw==",
   "success": true,
-  "projectFilePath": "C:\\Học\\phonestore\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
+  "projectFilePath": "C:\\Users\\anngu\\Desktop\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Acer\\.nuget\\packages\\mysql.data\\6.9.8\\mysql.data.6.9.8.nupkg.sha512",
-    "C:\\Users\\Acer\\.nuget\\packages\\mysqlconnection\\1.0.1\\mysqlconnection.1.0.1.nupkg.sha512",
-    "C:\\Users\\Acer\\.nuget\\packages\\mysqlconnector\\2.2.6\\mysqlconnector.2.2.6.nupkg.sha512"
+    "C:\\Users\\anngu\\.nuget\\packages\\mysql.data\\6.9.8\\mysql.data.6.9.8.nupkg.sha512",
+    "C:\\Users\\anngu\\.nuget\\packages\\mysqlconnection\\1.0.1\\mysqlconnection.1.0.1.nupkg.sha512",
+    "C:\\Users\\anngu\\.nuget\\packages\\mysqlconnector\\2.2.6\\mysqlconnector.2.2.6.nupkg.sha512"
   ],
   "logs": [
     {
