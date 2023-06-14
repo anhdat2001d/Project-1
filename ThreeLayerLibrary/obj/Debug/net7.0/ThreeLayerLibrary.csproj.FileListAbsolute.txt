@@ -1,0 +1,24 @@
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\bin\Debug\net7.0\ThreeLayerLibrary.deps.json
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\bin\Debug\net7.0\ThreeLayerLibrary.dll
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\bin\Debug\net7.0\ThreeLayerLibrary.pdb
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.csproj.AssemblyReference.cache
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.AssemblyInfoInputs.cache
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.AssemblyInfo.cs
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.dll
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\refint\ThreeLayerLibrary.dll
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.pdb
+C:\Users\Window 10 NT\Desktop\123\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ref\ThreeLayerLibrary.dll
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.csproj.AssemblyReference.cache
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.AssemblyInfoInputs.cache
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.AssemblyInfo.cs
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.csproj.CoreCompileInputs.cache
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.dll
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\refint\ThreeLayerLibrary.dll
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ThreeLayerLibrary.pdb
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\bin\Debug\net7.0\ThreeLayerLibrary.deps.json
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\bin\Debug\net7.0\ThreeLayerLibrary.dll
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\bin\Debug\net7.0\ThreeLayerLibrary.pdb
+C:\Học\phonestore\Project-1\ThreeLayerLibrary\obj\Debug\net7.0\ref\ThreeLayerLibrary.dll

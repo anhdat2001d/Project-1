@@ -1,0 +1,60 @@
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.exe
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.deps.json
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.runtimeconfig.json
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.dll
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.pdb
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\bin\Debug\net7.0\ThreeLayerLibrary.dll
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\bin\Debug\net7.0\ThreeLayerLibrary.pdb
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.AssemblyReference.cache
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.AssemblyInfoInputs.cache
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.AssemblyInfo.cs
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.CoreCompileInputs.cache
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.CopyComplete
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.dll
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\refint\PhoneStore.dll
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.pdb
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.genruntimeconfig.cache
+C:\Users\Window 10 NT\Desktop\123\Project-1\PhoneStore\obj\Debug\net7.0\ref\PhoneStore.dll
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.dll
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\refint\PhoneStore.dll
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.pdb
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.AssemblyReference.cache
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.AssemblyInfoInputs.cache
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.AssemblyInfo.cs
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.CoreCompileInputs.cache
+C:\Học\phonestore\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.exe
+C:\Học\phonestore\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.deps.json
+C:\Học\phonestore\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.runtimeconfig.json
+C:\Học\phonestore\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.dll
+C:\Học\phonestore\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.pdb
+C:\Học\phonestore\Project-1\PhoneStore\bin\Debug\net7.0\MySql.Data.dll
+C:\Học\phonestore\Project-1\PhoneStore\bin\Debug\net7.0\MySQLConnection.dll
+C:\Học\phonestore\Project-1\PhoneStore\bin\Debug\net7.0\MySqlConnector.dll
+C:\Học\phonestore\Project-1\PhoneStore\bin\Debug\net7.0\ThreeLayerLibrary.dll
+C:\Học\phonestore\Project-1\PhoneStore\bin\Debug\net7.0\ThreeLayerLibrary.pdb
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.CopyComplete
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.genruntimeconfig.cache
+C:\Học\phonestore\Project-1\PhoneStore\obj\Debug\net7.0\ref\PhoneStore.dll
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.exe
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.deps.json
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.runtimeconfig.json
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.dll
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\bin\Debug\net7.0\PhoneStore.pdb
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\bin\Debug\net7.0\MySql.Data.dll
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\bin\Debug\net7.0\MySQLConnection.dll
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\bin\Debug\net7.0\ThreeLayerLibrary.dll
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\bin\Debug\net7.0\ThreeLayerLibrary.pdb
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.AssemblyReference.cache
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.AssemblyInfoInputs.cache
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.AssemblyInfo.cs
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.CoreCompileInputs.cache
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.csproj.CopyComplete
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.dll
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\refint\PhoneStore.dll
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.pdb
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\PhoneStore.genruntimeconfig.cache
+C:\Users\anngu\Desktop\te\Project-1\PhoneStore\obj\Debug\net7.0\ref\PhoneStore.dll
