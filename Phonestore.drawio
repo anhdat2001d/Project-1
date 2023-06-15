@@ -210,7 +210,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="g4R_9UVsEIdJczepRnOr" name="Activity Diagram">
-        <mxGraphModel dx="7360" dy="3820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+        <mxGraphModel dx="6260" dy="3820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1183,7 +1183,7 @@
                     <mxGeometry x="-723" y="471.5" width="43" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-79" value="" style="shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1161.5" y="1478" width="521" height="10" as="geometry"/>
+                    <mxGeometry x="-1161.5" y="1380" width="521" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-80" value="" style="endArrow=classic;endFill=1;endSize=10;html=1;rounded=0;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.453;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="UpKj29kL3mepqzhXSxxm-70">
                     <mxGeometry width="160" relative="1" as="geometry">
@@ -1192,14 +1192,14 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-81" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1027.25" y="1363" width="80" height="40" as="geometry"/>
+                    <mxGeometry x="-1027.25" y="1265" width="80" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-82" value="" style="endArrow=classic;endFill=1;endSize=10;html=1;rounded=0;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-81">
                     <mxGeometry width="160" relative="1" as="geometry">
-                        <mxPoint x="-815.25" y="1385.5" as="sourcePoint"/>
-                        <mxPoint x="-808" y="1408" as="targetPoint"/>
+                        <mxPoint x="-815.25" y="1287.5" as="sourcePoint"/>
+                        <mxPoint x="-808" y="1310" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="-805.25" y="1383"/>
+                            <mxPoint x="-805.25" y="1285"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -1210,26 +1210,26 @@
                     <mxGeometry x="-967.5" y="601" width="70" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-85" value="[continue to payment]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-1167.25" y="1358" width="140" height="30" as="geometry"/>
+                    <mxGeometry x="-1167.25" y="1260" width="140" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-86" value="[Cancel Payment]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-927.25" y="1358" width="120" height="30" as="geometry"/>
+                    <mxGeometry x="-927.25" y="1260" width="120" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-87" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Payment&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-2290" y="229.5" width="782" height="1343" as="geometry"/>
+                    <mxGeometry x="-1450" y="250" width="860" height="1260" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-88" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.476;entryY=0.9;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FF0000;strokeWidth=1;startArrow=open;startFill=0;endArrow=none;endFill=0;endSize=16;opacity=70;startSize=10;sourcePerimeterSpacing=3;targetPerimeterSpacing=8;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-89" target="UpKj29kL3mepqzhXSxxm-79">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-89" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-929.75" y="1553.5" width="30" height="30" as="geometry"/>
+                    <mxGeometry x="-929.75" y="1455.5" width="30" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-90" value="" style="endArrow=classic;endFill=1;endSize=10;html=1;rounded=0;strokeColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-81" target="UpKj29kL3mepqzhXSxxm-114">
                     <mxGeometry width="160" relative="1" as="geometry">
-                        <mxPoint x="-1285.25" y="1395.5" as="sourcePoint"/>
-                        <mxPoint x="-1142.75" y="1428" as="targetPoint"/>
+                        <mxPoint x="-1285.25" y="1297.5" as="sourcePoint"/>
+                        <mxPoint x="-1142.75" y="1330" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="-1143.25" y="1383"/>
+                            <mxPoint x="-1143.25" y="1285"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -1237,7 +1237,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-92" value="Cancel Payment" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-860.75" y="1403" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="-860.75" y="1305" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-93" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-94" target="UpKj29kL3mepqzhXSxxm-96">
                     <mxGeometry relative="1" as="geometry">
@@ -1270,9 +1270,9 @@
                         <mxPoint x="-989" y="728" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="UpKj29kL3mepqzhXSxxm-100" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-102" target="UpKj29kL3mepqzhXSxxm-106">
+                <mxCell id="UpKj29kL3mepqzhXSxxm-100" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-102" target="UpKj29kL3mepqzhXSxxm-122">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-989" y="727.9999999999995" as="targetPoint"/>
+                        <mxPoint x="-987.25" y="718" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-101" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-102" target="UpKj29kL3mepqzhXSxxm-71">
@@ -1293,78 +1293,46 @@
                 <mxCell id="UpKj29kL3mepqzhXSxxm-104" value="payment method include:&lt;br&gt;1. Cart, 2.Cash. 3.VNPay" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
                     <mxGeometry x="-1341" y="592.5" width="96.5" height="105" as="geometry"/>
                 </mxCell>
-                <mxCell id="UpKj29kL3mepqzhXSxxm-105" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-106" target="UpKj29kL3mepqzhXSxxm-108">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="UpKj29kL3mepqzhXSxxm-106" value="Show Discount policy" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1053.25" y="718" width="132" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="UpKj29kL3mepqzhXSxxm-107" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-108" target="UpKj29kL3mepqzhXSxxm-110">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-888" y="968" as="targetPoint"/>
-                        <mxPoint x="-936" y="828" as="sourcePoint"/>
-                        <Array as="points">
-                            <mxPoint x="-818" y="828"/>
-                            <mxPoint x="-818" y="1256"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="UpKj29kL3mepqzhXSxxm-108" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1027.25" y="808" width="80" height="40" as="geometry"/>
-                </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-109" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-110" target="UpKj29kL3mepqzhXSxxm-112">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-987" y="1408" as="targetPoint"/>
+                        <mxPoint x="-987" y="1310" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-110" value="Show order details" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1052" y="1218" width="132" height="50" as="geometry"/>
+                    <mxGeometry x="-1052" y="1120" width="132" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-111" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-112" target="UpKj29kL3mepqzhXSxxm-81">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-112" value="Confirm Payment" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1046" y="1298" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="-1046" y="1200" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-113" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.035;entryY=0.217;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-114" target="UpKj29kL3mepqzhXSxxm-79">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-114" value="Receive payment" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1205.25" y="1410" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="-1205.25" y="1312" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-115" value="[Invalid choice of payment method]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
                     <mxGeometry x="-1223" y="553" width="210" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="UpKj29kL3mepqzhXSxxm-116" value="[Not exsist discount policy in DB]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-949" y="798" width="200" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-117" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-118" target="UpKj29kL3mepqzhXSxxm-110">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-118" value="Calculate total due according to the discount policy&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1053.25" y="1138" width="132" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="UpKj29kL3mepqzhXSxxm-119" value="[else]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-990" y="846" width="50" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="UpKj29kL3mepqzhXSxxm-120" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-108" target="UpKj29kL3mepqzhXSxxm-122">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-987" y="907.9999999999995" as="targetPoint"/>
-                        <mxPoint x="-987.25" y="847.9999999999995" as="sourcePoint"/>
-                        <Array as="points"/>
-                    </mxGeometry>
+                    <mxGeometry x="-1053.25" y="1040" width="132" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-121" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-122" target="UpKj29kL3mepqzhXSxxm-125">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="UpKj29kL3mepqzhXSxxm-122" value="Select Discount policy by ID" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1052" y="876" width="132" height="50" as="geometry"/>
+                <mxCell id="UpKj29kL3mepqzhXSxxm-122" value="Get Discount policy detail and discount price" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+                    <mxGeometry x="-1060" y="743" width="142" height="54" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-123" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-125" target="UpKj29kL3mepqzhXSxxm-122">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="-1108" y="968"/>
-                            <mxPoint x="-1108" y="901"/>
+                            <mxPoint x="-1108" y="870"/>
+                            <mxPoint x="-1108" y="770"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -1372,7 +1340,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-125" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1026" y="948" width="80" height="40" as="geometry"/>
+                    <mxGeometry x="-1026" y="850" width="80" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-126" value="discount policy on each product at different times&lt;br&gt;The discount policy is divided two forms, the first form is directly discounted in the invoice, the second forms does not reduce the price in the invoice&amp;nbsp;&amp;nbsp;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
                     <mxGeometry x="-1414.5" y="931.5" width="170" height="161" as="geometry"/>
@@ -1384,10 +1352,10 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-128" value="[Invalid format discount &lt;br&gt;policy ID and ID out of range]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-1184.5" y="970" width="180" height="40" as="geometry"/>
+                    <mxGeometry x="-1184.5" y="872" width="180" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-129" value="[else]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-990" y="988" width="50" height="30" as="geometry"/>
+                    <mxGeometry x="-990" y="890" width="50" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-130" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-132" target="UpKj29kL3mepqzhXSxxm-118">
                     <mxGeometry relative="1" as="geometry"/>
@@ -1395,25 +1363,31 @@
                 <mxCell id="UpKj29kL3mepqzhXSxxm-131" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="UpKj29kL3mepqzhXSxxm-132" target="UpKj29kL3mepqzhXSxxm-110">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="-878" y="1048"/>
-                            <mxPoint x="-878" y="1231"/>
+                            <mxPoint x="-878" y="950"/>
+                            <mxPoint x="-878" y="1133"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-132" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-                    <mxGeometry x="-1026" y="1028" width="80" height="40" as="geometry"/>
+                    <mxGeometry x="-1026" y="930" width="80" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-133" value="[Second forms]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-973" y="1055" width="100" height="30" as="geometry"/>
+                    <mxGeometry x="-973" y="957" width="100" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="UpKj29kL3mepqzhXSxxm-134" value="[First forms]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-1073" y="1062.5" width="90" height="30" as="geometry"/>
+                    <mxGeometry x="-1073" y="964.5" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="kg4yupVEwt81OM36zc4n-2" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=170;exitDy=93;exitPerimeter=0;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="kg4yupVEwt81OM36zc4n-1" target="UpKj29kL3mepqzhXSxxm-122">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="kg4yupVEwt81OM36zc4n-1" value="ex:&amp;nbsp;&lt;br&gt;Discount policy detail include:&lt;br&gt;promotion name and promotion time (dd/mm/yyyy)&amp;nbsp;&lt;br&gt;After input promotion name and promotion time you can input discount price (VND)&amp;nbsp;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="-1340" y="730" width="170" height="140" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram id="SclG0AHc9vTqV28twZBe" name="Class Diagram">
-        <mxGraphModel dx="4060" dy="3220" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1523" dy="1895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
