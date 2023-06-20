@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="5">
     <diagram id="plzzUm9Q1-YNLyNBZAM-" name="UseCase">
-        <mxGraphModel dx="2068" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2724" dy="978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -195,7 +195,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="evYkAqDUSUbGGytnIl_m-112" value="Phonestore" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;" parent="1" vertex="1">
-                    <mxGeometry x="-550" y="10" width="1210" height="810" as="geometry"/>
+                    <mxGeometry x="-610" y="20" width="1210" height="810" as="geometry"/>
                 </mxCell>
                 <mxCell id="y3XF-FJHsTXpcdgW195x-6" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="evYkAqDUSUbGGytnIl_m-115" target="evYkAqDUSUbGGytnIl_m-114" edge="1">
                     <mxGeometry width="160" relative="1" as="geometry">
@@ -210,7 +210,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="g4R_9UVsEIdJczepRnOr" name="Activity Diagram">
-        <mxGraphModel dx="3940" dy="909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+        <mxGraphModel dx="3418" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>

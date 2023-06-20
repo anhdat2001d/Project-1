@@ -4,53 +4,36 @@ using Persistence;
 using Ults;
 using BL;
 using DAL;
+using Enum;
 using MySql.Data.MySqlClient;
 
 namespace PhoneStoreUI
 {
-
     class Program
     {
         static void Main()
         {
-            bool active = true;
-            bool loginStatus;
+            bool active = true, loginStatus;
+            PhoneDAL phoneDAL = new DAL.PhoneDAL();
             short mainChoose = 0;
-            int loginAccount = ConsoleUlts.Login();
-            List<Phone> phones = new List<Phone>();
-            phones = GetListItem();
-            if (loginAccount == 1)
+            while (active)
             {
-                Ults.Utilities.DisplayListPhone(phones);
+                int loginAccount = ConsoleUlts.Login();
+                if (loginAccount == (int)E.LoginActivity.SellerAccount)
+                {
+                    Ults.ConsoleUlts.SellerMenuHandle(phoneDAL);
+                }
+                else if (loginAccount == (int)E.LoginActivity.AccountantAccount)
+                {
+                    // ConsoleUlts.AccountantMenuUI();
+                }
+                else if (loginAccount == (int)E.LoginActivity.Exit)
+                {
+                    active = false;
+                    ConsoleUlts.Notification("Exiting Suscess");
+                }
+                else ConsoleUlts.Notification("Invalid choice");
             }
-            else if (loginAccount == 2)
-            {
-                // ConsoleUlts.AccountantMenuUI();
-            }
-            else if (loginAccount == 3) ConsoleUlts.Notification("Exiting Suscess");
-            else ConsoleUlts.Notification("Invalid choice");
-
-        }
-
-        public static List<Phone> GetListItem()
-        {
-            List<Phone> phones = new List<Phone>();
-            string connectionString = "server=localhost;uid=root;pwd=78789898Tia;database=phonestore";
-            MySqlConnection conn = new MySqlConnection(connectionString);
-            conn.Open();
-            string insertQuery = "SELECT * FROM phones";
-            MySqlCommand cmd = new MySqlCommand(insertQuery, conn);
-            MySqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                Phone phone = new Phone();
-                phone.PhoneID = reader.GetInt32("Phone_ID");
-                phone.PhoneName = reader.GetString("Phone_Name");
-                phone.Price = reader.GetDecimal("Price");
-                phone.Brand = reader.GetString("Brand");
-                phones.Add(phone);
-            }
-            return phones;
         }
     }
 }

@@ -11,13 +11,4 @@ public class PhoneBL
     {
         return idal.GetItemById(itemId);
     }
-    public List<Phone> GetAll()
-    {
-        return idal.GetItems(ItemFilter.GET_ALL, new Phone());
-    }
-    public List<Phone> GetByName(string itemName)
-    {
-        return idal.GetItems(ItemFilter.FILTER_BY_ITEM_NAME, new Phone { });
-    }
-
 }

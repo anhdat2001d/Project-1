@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Học\\Project-1\\PhoneStore\\PhoneStore.csproj": {}
+    "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\PhoneStore\\PhoneStore.csproj": {}
   },
   "projects": {
-    "C:\\Học\\Project-1\\PhoneStore\\PhoneStore.csproj": {
+    "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\PhoneStore\\PhoneStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Học\\Project-1\\PhoneStore\\PhoneStore.csproj",
+        "projectUniqueName": "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\PhoneStore\\PhoneStore.csproj",
         "projectName": "PhoneStore",
-        "projectPath": "C:\\Học\\Project-1\\PhoneStore\\PhoneStore.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Học\\Project-1\\PhoneStore\\obj\\",
+        "projectPath": "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\PhoneStore\\PhoneStore.csproj",
+        "packagesPath": "C:\\Users\\anngu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\PhoneStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\anngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj": {
-                "projectPath": "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj"
+              "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj": {
+                "projectPath": "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj"
               }
             }
           }
@@ -75,22 +77,24 @@
         }
       }
     },
-    "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj": {
+    "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
         "projectName": "ThreeLayerLibrary",
-        "projectPath": "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Học\\Project-1\\ThreeLayerLibrary\\obj\\",
+        "projectPath": "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
+        "packagesPath": "C:\\Users\\anngu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anngu\\Desktop\\Project-1\\Project-1\\ThreeLayerLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\anngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
