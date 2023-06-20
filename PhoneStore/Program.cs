@@ -17,7 +17,6 @@ namespace PhoneStoreUI
             bool loginStatus;
             short mainChoose = 0;
             int loginAccount = ConsoleUlts.Login();
-            PhoneDAL phoneDAL = new PhoneDAL();
             List<Phone> phones = new List<Phone>();
             phones = GetListItem();
             if (loginAccount == 1)
@@ -36,7 +35,7 @@ namespace PhoneStoreUI
         public static List<Phone> GetListItem()
         {
             List<Phone> phones = new List<Phone>();
-            string connectionString = "server=localhost;uid=root;pwd=123456;database=phonestore";
+            string connectionString = "server=localhost;uid=root;pwd=An281102@@;database=phonestore";
             MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();
             string insertQuery = "SELECT * FROM phones";
