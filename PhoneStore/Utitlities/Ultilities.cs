@@ -1,10 +1,12 @@
+using Persistence;
+
 namespace Ults
 {
     static class Utilities
     {
-        public static void DisplayListPhone()
+        public static void DisplayListPhone(List<Phone> listPhone)
         {
-            Dictionary<int, List<string>> phones = ConsoleUlts.SellerMenuUI();
+            Dictionary<int, List<string>> phones = ConsoleUlts.SellerMenuHandle();
             int countPage = phones.Count();
             int currentPage = 1;
             Console.WriteLine(countPage);
