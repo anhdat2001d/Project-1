@@ -105,26 +105,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anngu\\.nuget\\packages\\": {}
+    "C:\\Users\\Acer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anngu\\Desktop\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
+      "projectUniqueName": "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
       "projectName": "ThreeLayerLibrary",
-      "projectPath": "C:\\Users\\anngu\\Desktop\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
-      "packagesPath": "C:\\Users\\anngu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anngu\\Desktop\\Project-1\\ThreeLayerLibrary\\obj\\",
+      "projectPath": "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
+      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+      "outputPath": "C:\\Học\\Project-1\\ThreeLayerLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

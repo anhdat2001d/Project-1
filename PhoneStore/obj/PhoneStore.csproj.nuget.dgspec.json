@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macos/Documents/ProjectVTC/Project-1/PhoneStore/PhoneStore.csproj": {}
+    "C:\\Học\\Project-1\\PhoneStore\\PhoneStore.csproj": {}
   },
   "projects": {
-    "/Users/macos/Documents/ProjectVTC/Project-1/PhoneStore/PhoneStore.csproj": {
+    "C:\\Học\\Project-1\\PhoneStore\\PhoneStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macos/Documents/ProjectVTC/Project-1/PhoneStore/PhoneStore.csproj",
+        "projectUniqueName": "C:\\Học\\Project-1\\PhoneStore\\PhoneStore.csproj",
         "projectName": "PhoneStore",
-        "projectPath": "/Users/macos/Documents/ProjectVTC/Project-1/PhoneStore/PhoneStore.csproj",
-        "packagesPath": "/Users/macos/.nuget/packages/",
-        "outputPath": "/Users/macos/Documents/ProjectVTC/Project-1/PhoneStore/obj/",
+        "projectPath": "C:\\Học\\Project-1\\PhoneStore\\PhoneStore.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Học\\Project-1\\PhoneStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/macos/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/macos/Documents/ProjectVTC/Project-1/ThreeLayerLibrary/ThreeLayerLibrary.csproj": {
-                "projectPath": "/Users/macos/Documents/ProjectVTC/Project-1/ThreeLayerLibrary/ThreeLayerLibrary.csproj"
+              "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj": {
+                "projectPath": "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj"
               }
             }
           }
@@ -71,21 +71,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/macos/Documents/ProjectVTC/Project-1/ThreeLayerLibrary/ThreeLayerLibrary.csproj": {
+    "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macos/Documents/ProjectVTC/Project-1/ThreeLayerLibrary/ThreeLayerLibrary.csproj",
+        "projectUniqueName": "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
         "projectName": "ThreeLayerLibrary",
-        "projectPath": "/Users/macos/Documents/ProjectVTC/Project-1/ThreeLayerLibrary/ThreeLayerLibrary.csproj",
-        "packagesPath": "/Users/macos/.nuget/packages/",
-        "outputPath": "/Users/macos/Documents/ProjectVTC/Project-1/ThreeLayerLibrary/obj/",
+        "projectPath": "C:\\Học\\Project-1\\ThreeLayerLibrary\\ThreeLayerLibrary.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Học\\Project-1\\ThreeLayerLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/macos/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -134,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

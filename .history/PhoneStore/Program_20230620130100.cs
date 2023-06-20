@@ -35,7 +35,7 @@ namespace PhoneStoreUI
         public static List<Phone> GetListItem()
         {
             List<Phone> phones = new List<Phone>();
-            string connectionString = "server=localhost;uid=root;pwd=78789898Tia;database=phonestore";
+            string connectionString = "server=localhost;uid=root;pwd=78789898Tia@@;database=phonestore";
             MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();
             string insertQuery = "SELECT * FROM phones";

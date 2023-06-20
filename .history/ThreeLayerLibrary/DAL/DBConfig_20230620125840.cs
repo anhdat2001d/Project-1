@@ -8,7 +8,7 @@ namespace DAL
         private DbConfig() { }
         public static MySqlConnection GetDefaultConnection()
         {
-            return GetConnection("server=localhost;user id=root;password=78789898Tia;port=3306;database=phonestore;IgnoreCommandTransaction=true;");
+            return GetConnection("server=localhost;user id=root;password=78789898Tia@@;port=3306;database=phonestore;IgnoreCommandTransaction=true;");
         }
 
         public static MySqlConnection GetConnection()
