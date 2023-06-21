@@ -27,47 +27,53 @@ namespace Ults
         }
         public static void PhonePageHandle(List<Phone> listPhone)
         {
-            Dictionary<int, List<Phone>> phones = new Dictionary<int, List<Phone>>();
-            phones = SellerMenuHandle(listPhone);
-            int countPage = phones.Count(), currentPage = 1;
-            ConsoleKeyInfo input = new ConsoleKeyInfo();
-            while (true)
+            if (listPhone.Count() != 0)
             {
-                Ults.ConsoleUlts.Title(
-                    null,
-@"     █████  ██████  ██████      ████████  ██████       ██████  ██████  ██████  ███████ ██████  
+
+                Dictionary<int, List<Phone>> phones = new Dictionary<int, List<Phone>>();
+                phones = SellerMenuHandle(listPhone);
+                int countPage = phones.Count(), currentPage = 1;
+                ConsoleKeyInfo input = new ConsoleKeyInfo();
+                while (true)
+                {
+                    Ults.ConsoleUlts.Title(
+                        null,
+    @"     █████  ██████  ██████      ████████  ██████       ██████  ██████  ██████  ███████ ██████  
     ██   ██ ██   ██ ██   ██        ██    ██    ██     ██    ██ ██   ██ ██   ██ ██      ██   ██ 
     ███████ ██   ██ ██   ██        ██    ██    ██     ██    ██ ██████  ██   ██ █████   ██████  
     ██   ██ ██   ██ ██   ██        ██    ██    ██     ██    ██ ██   ██ ██   ██ ██      ██   ██ 
     ██   ██ ██████  ██████         ██     ██████       ██████  ██   ██ ██████  ███████ ██   ██ "
-                );
-                Console.WriteLine("===============================================================================================================");
-                Console.WriteLine("| {0, 10} | {1, 30} | {2, 20} | {3, 15} | {4, 20} |", "ID", "Phone Name", "Brand", "Price", "Platform");
-                Console.WriteLine("===============================================================================================================");
-                foreach (Phone phone in phones[currentPage])
-                {
-                    PrintPhoneInformation(phone);
-                }
-                Console.WriteLine("===============================================================================================================");
-                Console.WriteLine("{0,55}" + "<" + $"{currentPage}/{countPage}" + ">", " ");
-                Console.WriteLine("===============================================================================================================");
-                Console.WriteLine("Press 'Left Arrow' To Back Previous Page, 'Right Arror' To Next Page");
-                Console.WriteLine("Press 'Space' To Add Phone By ID, 'B' To Back Previous Menu");
-                input = Console.ReadKey();
-                if (currentPage <= countPage)
-                {
-                    if (input.Key == ConsoleKey.RightArrow)
+                    );
+                    Console.WriteLine("===============================================================================================================");
+                    Console.WriteLine("| {0, 10} | {1, 30} | {2, 20} | {3, 15} | {4, 20} |", "ID", "Phone Name", "Brand", "Price", "Platform");
+                    Console.WriteLine("===============================================================================================================");
+                    foreach (Phone phone in phones[currentPage])
                     {
-                        if (currentPage <= countPage - 1) currentPage++;
-                        Console.Clear();
+                        PrintPhoneInformation(phone);
                     }
-                    if (input.Key == ConsoleKey.LeftArrow)
+                    Console.WriteLine("===============================================================================================================");
+                    Console.WriteLine("{0,55}" + "< " + $"{currentPage}/{countPage}" + " >", " ");
+                    Console.WriteLine("===============================================================================================================");
+                    Console.WriteLine("Press 'Left Arrow' To Back Previous Page, 'Right Arror' To Next Page");
+                    Console.WriteLine("Press 'Space' To Add Phone By ID, 'B' To Back Previous Menu");
+                    input = Console.ReadKey();
+                    if (currentPage <= countPage)
                     {
-                        if (currentPage > 1) currentPage--;
-                        Console.Clear();
+                        if (input.Key == ConsoleKey.RightArrow)
+                        {
+                            if (currentPage <= countPage - 1) currentPage++;
+                            Console.Clear();
+                        }
+                        if (input.Key == ConsoleKey.LeftArrow)
+                        {
+                            if (currentPage > 1) currentPage--;
+                            Console.Clear();
+                        }
+                        if (input.Key == ConsoleKey.Spacebar) break;
                     }
-                    if (input.Key == ConsoleKey.Spacebar) break;
                 }
+            } else {
+                ConsoleUlts.WarningAlert("Phone Not Found!");
             }
             // AddPhoneToOrder(phone, order);
         }
@@ -96,7 +102,7 @@ namespace Ults
                 else if (sList.Count() < itemInTab && secondCount == phoneQuantity)
                 {
                     idTab++;
-                    menuTab.Add(idTab, sList); 
+                    menuTab.Add(idTab, sList);
                 }
                 secondCount++;
                 count++;

@@ -66,6 +66,7 @@ namespace Ults
         {
             bool active = true;
             List<Phone> phones = phoneDAL.GetAllItem();
+            List<Phone>? listSearch = new List<Phone>();
             string[] menuItem = { "👉 Search Phone By Information", "👉 Back To Previous Menu" };
             while (active)
             {
@@ -78,16 +79,25 @@ namespace Ults
      ██████ ██   ██ ███████ ██   ██    ██    ███████      ██████  ██   ██ ██████  ███████ ██   ██ ", menuItem))
                 {
                     case 1:
-                        ConsoleUlts.Title(null, 
+                        ConsoleUlts.Title(null,
                         @"    ███████ ███████  █████  ██████   ██████ ██   ██     ██████  ██   ██  ██████  ███    ██ ███████ 
     ██      ██      ██   ██ ██   ██ ██      ██   ██     ██   ██ ██   ██ ██    ██ ████   ██ ██      
     ███████ █████   ███████ ██████  ██      ███████     ██████  ███████ ██    ██ ██ ██  ██ █████   
          ██ ██      ██   ██ ██   ██ ██      ██   ██     ██      ██   ██ ██    ██ ██  ██ ██ ██      
     ███████ ███████ ██   ██ ██   ██  ██████ ██   ██     ██      ██   ██  ██████  ██   ████ ███████ "
                         );
-                        Console.Write("\nEnter Phone Information To Add To Order: ");
-                        string searchPhone = Console.ReadLine() ?? "";
-                        Ults.Utilities.PhonePageHandle(phoneDAL.Search(searchPhone));
+                        string searchPhone = "";
+                        do
+                        {
+                            Console.Write("\nEnter Phone Information To Add To Order: ");
+                            searchPhone = Console.ReadLine() ?? "";
+                            listSearch = phoneDAL.Search(searchPhone);
+                            if (listSearch == null)
+                            {
+                                ConsoleUlts.WarningAlert("Phone Not Found!");
+                            }
+                        } while (listSearch == null);
+                        Ults.Utilities.PhonePageHandle(listSearch);
                         break;
                     case 2:
                         active = false;
@@ -143,14 +153,16 @@ namespace Ults
         public static void ErrorAlert(string errorMsg)
         {
             ConsoleUlts.RedForegroundColor();
-            Console.WriteLine("⛔ " + errorMsg);
+            Console.WriteLine(errorMsg.ToUpper());
             ConsoleUlts.ResetColor();
+            ConsoleUlts.PressEnterToContinue();
         }
         public static void WarningAlert(string warnMsg)
         {
             ConsoleUlts.YellowForegroundColor();
-            Console.WriteLine("⚠️ " + warnMsg);
+            Console.WriteLine(warnMsg.ToUpper());
             ConsoleUlts.ResetColor();
+            ConsoleUlts.PressEnterToContinue();
         }
         public static void SellerMenuHandle(DAL.PhoneDAL phoneDAL)
         {
