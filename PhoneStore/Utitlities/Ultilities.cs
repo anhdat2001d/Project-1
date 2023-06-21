@@ -22,6 +22,9 @@ namespace Ults
             {
                 Console.Write("\n" + "👀 Your choice: ");
                 int.TryParse(Console.ReadLine(), out choice);
+                if(choice <= 0 || choice > menuItem.Count()) {
+                    ConsoleUlts.ErrorAlert("Invalid Choice, Please Try Again");
+                }
             } while (choice <= 0 || choice > menuItem.Count());
             return choice;
         }
