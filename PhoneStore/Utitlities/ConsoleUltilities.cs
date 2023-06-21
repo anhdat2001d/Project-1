@@ -51,15 +51,15 @@ namespace Ults
             while (key.Key != ConsoleKey.Enter);
             return 1;
         }
-        public static bool PressEnterToContinue()
+        public static bool PressEnterTo(string action)
         {
-            Console.Write("Press Enter To Countinue...");
+            Console.Write($"Press Enter To {action}...");
             ConsoleKeyInfo key = Console.ReadKey();
             if (key.Key == ConsoleKey.Enter)
             {
                 return true;
             }
-            else PressEnterToContinue();
+            else PressEnterTo(action);
             return true;
         }
         public static void CreateOrderMenuHandle(DAL.PhoneDAL phoneDAL)
@@ -87,17 +87,17 @@ namespace Ults
     ███████ ███████ ██   ██ ██   ██  ██████ ██   ██     ██      ██   ██  ██████  ██   ████ ███████ "
                         );
                         string searchPhone = "";
-                        do
+                        Console.Write("\nEnter Phone Information To Add To Order: ");
+                        searchPhone = Console.ReadLine() ?? "";
+                        listSearch = phoneDAL.Search(searchPhone);
+
+                        if (listSearch == null)
                         {
-                            Console.Write("\nEnter Phone Information To Add To Order: ");
-                            searchPhone = Console.ReadLine() ?? "";
-                            listSearch = phoneDAL.Search(searchPhone);
-                            if (listSearch == null)
-                            {
-                                ConsoleUlts.WarningAlert("Phone Not Found!");
-                            }
-                        } while (listSearch == null);
-                        Ults.Utilities.PhonePageHandle(listSearch);
+                            ConsoleUlts.WarningAlert("Phone Not Found!");
+                            ConsoleUlts.PressEnterTo("Back Previous Menu");
+                        }
+                        else Ults.Utilities.PhonePageHandle(listSearch);
+
                         break;
                     case 2:
                         active = false;
@@ -146,23 +146,21 @@ namespace Ults
         public static void Notification(string message) // thông báo
         {
             Console.WriteLine(message + "!");
-            PressEnterToContinue();
+            PressEnterTo("Continue");
             if (message == "Invalid Choice!")
                 Console.Clear();
         }
         public static void ErrorAlert(string errorMsg)
         {
             ConsoleUlts.RedForegroundColor();
-            Console.WriteLine(errorMsg.ToUpper());
+            Console.WriteLine(errorMsg.ToUpper() + "❌");
             ConsoleUlts.ResetColor();
-            ConsoleUlts.PressEnterToContinue();
         }
         public static void WarningAlert(string warnMsg)
         {
             ConsoleUlts.YellowForegroundColor();
-            Console.WriteLine(warnMsg.ToUpper());
+            Console.WriteLine(warnMsg.ToUpper() + "⚠️");
             ConsoleUlts.ResetColor();
-            ConsoleUlts.PressEnterToContinue();
         }
         public static void SellerMenuHandle(DAL.PhoneDAL phoneDAL)
         {

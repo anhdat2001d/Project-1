@@ -22,8 +22,10 @@ namespace Ults
             {
                 Console.Write("\n" + "👀 Your choice: ");
                 int.TryParse(Console.ReadLine(), out choice);
-                if(choice <= 0 || choice > menuItem.Count()) {
+                if (choice <= 0 || choice > menuItem.Count())
+                {
                     ConsoleUlts.ErrorAlert("Invalid Choice, Please Try Again");
+                    ConsoleUlts.PressEnterTo("Press Enter To Try Again");
                 }
             } while (choice <= 0 || choice > menuItem.Count());
             return choice;
@@ -32,7 +34,6 @@ namespace Ults
         {
             if (listPhone.Count() != 0)
             {
-
                 Dictionary<int, List<Phone>> phones = new Dictionary<int, List<Phone>>();
                 phones = SellerMenuHandle(listPhone);
                 int countPage = phones.Count(), currentPage = 1;
@@ -74,9 +75,13 @@ namespace Ults
                         }
                         if (input.Key == ConsoleKey.Spacebar) break;
                     }
+                    if (input.Key == ConsoleKey.B) break;
                 }
-            } else {
-                ConsoleUlts.WarningAlert("Phone Not Found!");
+            }
+            else
+            {
+                ConsoleUlts.WarningAlert("Phone Not Found");
+                ConsoleUlts.PressEnterTo("Back To Previous Menu");
             }
             // AddPhoneToOrder(phone, order);
         }
