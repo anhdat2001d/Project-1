@@ -19,15 +19,15 @@ namespace PhoneStoreUI
             while (active)
             {
                 int loginAccount = ConsoleUlts.Login();
-                if (loginAccount == (int)E.LoginActivity.SellerAccount)
+                if (loginAccount == (int) E.LoginActivity.SellerAccount)
                 {
                     Ults.ConsoleUlts.SellerMenuHandle(phoneDAL);
                 }
-                else if (loginAccount == (int)E.LoginActivity.AccountantAccount)
+                else if (loginAccount == (int) E.LoginActivity.AccountantAccount)
                 {
                     // ConsoleUlts.AccountantMenuUI();
                 }
-                else if (loginAccount == (int)E.LoginActivity.Exit)
+                else if (loginAccount == (int) E.LoginActivity.Exit)
                 {
                     active = false;
                     ConsoleUlts.Notification("Exiting Suscess");
