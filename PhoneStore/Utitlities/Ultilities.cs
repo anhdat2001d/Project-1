@@ -69,6 +69,9 @@ namespace Ults
                             if (currentPage > 1) currentPage--;
                             Console.Clear();
                         }
+
+                        if (input.Key == ConsoleKey.B) break;
+
                         if (input.Key == ConsoleKey.Spacebar)
                         {
                             Console.Clear();
@@ -86,7 +89,6 @@ namespace Ults
                             return true;
                         }
                     }
-                    if (input.Key == ConsoleKey.B) break;
                 }
             }
             else
@@ -166,7 +168,7 @@ namespace Ults
         }
         public static bool PressEnterTo(string action)
         {
-            Console.WriteLine($"Press Enter To {action}...");
+            Console.Write($"👉 Enter To {action}...");
             ConsoleKeyInfo key = Console.ReadKey();
             if (key.Key == ConsoleKey.Enter)
             {
@@ -185,7 +187,7 @@ namespace Ults
                 List<Phone>? listSearch = new List<Phone>();
                 string? searchPhone = null;
                 string[] menuItem = { "👉 Search Phone By Information", "👉 Back To Previous Menu" };
-                string[] menuOption = { "Re-Enter Phone Information", "Cancel Order" };
+                string[] menuOption = { "👉 Re-Enter Phone Information", "👉 Cancel Order" };
                 while (active)
                 {
                     switch (Utilities.Menu(
@@ -212,20 +214,18 @@ namespace Ults
                                 if (listSearch == null)
                                 {
                                     ConsoleUlts.ErrorAlert("Phone Not Found");
-                                    do
+
+                                    reEnterOrCancel = Utilities.Menu(null, null, menuOption);
+                                    switch (reEnterOrCancel)
                                     {
-                                        reEnterOrCancel = Utilities.Menu(null, null, menuOption);
-                                        switch (reEnterOrCancel)
-                                        {
-                                            case (int)ActivityEnum.SearchPhone.ReEnterPhoneInfo:
-                                                PressEnterTo("Re-enter Phone Infomation");
-                                                break;
-                                            case (int)ActivityEnum.SearchPhone.CancelOrder:
-                                                PressEnterTo("Back Previous Menu");
-                                                activeSearchPhone = false;
-                                                break;
-                                        }
-                                    } while (reEnterOrCancel != (int)ActivityEnum.SearchPhone.CancelOrder);
+                                        case (int)ActivityEnum.SearchPhone.ReEnterPhoneInfo:
+                                            PressEnterTo("Re-enter Phone Infomation");
+                                            break;
+                                        case (int)ActivityEnum.SearchPhone.CancelOrder:
+                                            PressEnterTo("Back Previous Menu");
+                                            activeSearchPhone = false;
+                                            break;
+                                    }
                                 }
                                 else
                                 {
@@ -233,7 +233,7 @@ namespace Ults
                                     int phoneId;
                                     do
                                     {
-                                        Console.Write("Input Phone ID To Add To Order: ");
+                                        Console.Write("👉 Input Phone ID To Add To Order: ");
                                         int.TryParse(Console.ReadLine(), out phoneId);
 
                                         if (phoneId <= 0 || phoneId > phones.Count())
