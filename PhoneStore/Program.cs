@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Persistence;
 using Ults;
 using BL;
-using DAL;
 using Enum;
 using MySql.Data.MySqlClient;
 
@@ -14,20 +13,20 @@ namespace PhoneStoreUI
         static void Main()
         {
             bool active = true, loginStatus;
-            PhoneDAL phoneDAL = new DAL.PhoneDAL();
+            PhoneBL phoneBL = new PhoneBL();
             short mainChoose = 0;
             while (active)
             {
                 int loginAccount = ConsoleUlts.Login();
-                if (loginAccount == (int) E.LoginActivity.SellerAccount)
+                if (loginAccount == (int)E.LoginActivity.SellerAccount)
                 {
-                    Ults.ConsoleUlts.SellerMenuHandle(phoneDAL);
+                    Ults.ConsoleUlts.SellerMenuHandle(phoneBL);
                 }
-                else if (loginAccount == (int) E.LoginActivity.AccountantAccount)
+                else if (loginAccount == (int)E.LoginActivity.AccountantAccount)
                 {
                     // ConsoleUlts.AccountantMenuUI();
                 }
-                else if (loginAccount == (int) E.LoginActivity.Exit)
+                else if (loginAccount == (int)E.LoginActivity.Exit)
                 {
                     active = false;
                     ConsoleUlts.Notification("Exiting Suscess");

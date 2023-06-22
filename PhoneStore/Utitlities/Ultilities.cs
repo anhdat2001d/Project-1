@@ -9,10 +9,10 @@ namespace Ults
             Console.WriteLine("| {0, 10} | {1, 30} | {2, 20} | {3, 15} | {4, 20} |", phone.PhoneID, phone.PhoneName, phone.Brand, phone.Price, phone.Platform);
         }
 
-        public static int Menu(string title, string subTitle, string[] menuItem)
+        public static int Menu(string? title, string? subTitle, string[] menuItem)
         {
             int i = 0, choice;
-            ConsoleUlts.Title(title, subTitle);
+            if (title != null || subTitle != null) ConsoleUlts.Title(title, subTitle);
             for (; i < menuItem.Count(); i++)
             {
                 Console.WriteLine("\n" + menuItem[i] + " (" + (i + 1) + ")");
@@ -25,12 +25,11 @@ namespace Ults
                 if (choice <= 0 || choice > menuItem.Count())
                 {
                     ConsoleUlts.ErrorAlert("Invalid Choice, Please Try Again");
-                    ConsoleUlts.PressEnterTo("Press Enter To Try Again");
                 }
             } while (choice <= 0 || choice > menuItem.Count());
             return choice;
         }
-        public static void PhonePageHandle(List<Phone> listPhone)
+        public static bool PhonePageHandle(List<Phone> listPhone)
         {
             if (listPhone.Count() != 0)
             {
@@ -73,7 +72,22 @@ namespace Ults
                             if (currentPage > 1) currentPage--;
                             Console.Clear();
                         }
-                        if (input.Key == ConsoleKey.Spacebar) break;
+                        if (input.Key == ConsoleKey.Spacebar)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("===============================================================================================================");
+                            Console.WriteLine("| {0, 10} | {1, 30} | {2, 20} | {3, 15} | {4, 20} |", "ID", "Phone Name", "Brand", "Price", "Platform");
+                            Console.WriteLine("===============================================================================================================");
+
+                            foreach (Phone phone in phones[currentPage])
+                            {
+                                PrintPhoneInformation(phone);
+                            }
+                            Console.WriteLine("===============================================================================================================");
+                            Console.WriteLine("{0,55}" + "< " + $"{currentPage}/{countPage}" + " >", " ");
+                            Console.WriteLine("===============================================================================================================");
+                            return true;
+                        }
                     }
                     if (input.Key == ConsoleKey.B) break;
                 }
@@ -83,6 +97,7 @@ namespace Ults
                 ConsoleUlts.WarningAlert("Phone Not Found");
                 ConsoleUlts.PressEnterTo("Back To Previous Menu");
             }
+            return false;
             // AddPhoneToOrder(phone, order);
         }
         public static Dictionary<int, List<Phone>> SellerMenuHandle(List<Phone> phoneList)
