@@ -1,4 +1,6 @@
 using Persistence;
+using BL;
+using Enum;
 
 namespace Ults
 {
@@ -95,7 +97,7 @@ namespace Ults
             else
             {
                 ConsoleUlts.WarningAlert("Phone Not Found");
-                ConsoleUlts.PressEnterTo("Back To Previous Menu");
+                PressEnterTo("Back To Previous Menu");
             }
             return false;
             // AddPhoneToOrder(phone, order);
@@ -131,6 +133,166 @@ namespace Ults
                 count++;
             }
             return menuTab;
+        }
+        public static int Login()
+        {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            ConsoleUlts.Title(
+                @"        ██████  ██   ██  ██████  ███    ██ ███████ ███████ ████████  ██████  ██████  ███████ 
+        ██   ██ ██   ██ ██    ██ ████   ██ ██      ██         ██    ██    ██ ██   ██ ██      
+        ██████  ███████ ██    ██ ██ ██  ██ █████   ███████    ██    ██    ██ ██████  █████   
+        ██      ██   ██ ██    ██ ██  ██ ██ ██           ██    ██    ██    ██ ██   ██ ██      
+        ██      ██   ██  ██████  ██   ████ ███████ ███████    ██     ██████  ██   ██ ███████ "
+            , @"                            ██       ██████   ██████  ██ ███    ██ 
+                            ██      ██    ██ ██       ██ ████   ██ 
+                            ██      ██    ██ ██   ███ ██ ██ ██  ██ 
+                            ██      ██    ██ ██    ██ ██ ██  ██ ██ 
+                            ███████  ██████   ██████  ██ ██   ████ ");
+            Console.Write(@"👉 User Name: ");
+            string userName = Console.ReadLine() ?? "";
+            Console.Write(@"👉 Password: ");
+            string pass = "";
+            ConsoleKeyInfo key;
+            do
+            {
+                key = Console.ReadKey(true);
+                if (key.Key != ConsoleKey.Backspace)
+                {
+                    pass += key.KeyChar;
+                    Console.Write("*");
+                }
+                else
+                {
+                    Console.Write("\b");
+                }
+            }
+            while (key.Key != ConsoleKey.Enter);
+            Console.WriteLine(pass);
+            return 1;
+        }
+        public static bool PressEnterTo(string action)
+        {
+            Console.WriteLine($"Press Enter To {action}...");
+            ConsoleKeyInfo key = Console.ReadKey();
+            if (key.Key == ConsoleKey.Enter)
+            {
+                return true;
+            }
+            else PressEnterTo(action);
+            return true;
+        }
+        public static bool CreateOrderMenuHandle(PhoneBL phoneBL)
+        {
+            int reEnterOrCancel;
+            bool active = true, activeSearchPhone = true;
+            List<Phone>? phones = phoneBL.GetAllItem();
+            if (phones != null)
+            {
+                List<Phone>? listSearch = new List<Phone>();
+                string? searchPhone = null;
+                string[] menuItem = { "👉 Search Phone By Information", "👉 Back To Previous Menu" };
+                string[] menuOption = { "Re-Enter Phone Information", "Cancel Order" };
+                while (active)
+                {
+                    switch (Utilities.Menu(
+                       null,
+        @"     ██████ ██████  ███████  █████  ████████ ███████      ██████  ██████  ██████  ███████ ██████  
+    ██      ██   ██ ██      ██   ██    ██    ██          ██    ██ ██   ██ ██   ██ ██      ██   ██ 
+    ██      ██████  █████   ███████    ██    █████       ██    ██ ██████  ██   ██ █████   ██████  
+    ██      ██   ██ ██      ██   ██    ██    ██          ██    ██ ██   ██ ██   ██ ██      ██   ██ 
+     ██████ ██   ██ ███████ ██   ██    ██    ███████      ██████  ██   ██ ██████  ███████ ██   ██ ", menuItem))
+                    {
+                        case 1:
+                            ConsoleUlts.Title(null,
+                            @"    ███████ ███████  █████  ██████   ██████ ██   ██     ██████  ██   ██  ██████  ███    ██ ███████ 
+    ██      ██      ██   ██ ██   ██ ██      ██   ██     ██   ██ ██   ██ ██    ██ ████   ██ ██      
+    ███████ █████   ███████ ██████  ██      ███████     ██████  ███████ ██    ██ ██ ██  ██ █████   
+         ██ ██      ██   ██ ██   ██ ██      ██   ██     ██      ██   ██ ██    ██ ██  ██ ██ ██      
+    ███████ ███████ ██   ██ ██   ██  ██████ ██   ██     ██      ██   ██  ██████  ██   ████ ███████ "
+                            );
+                            do
+                            {
+                                Console.Write("\nEnter Phone Information To Search: ");
+                                searchPhone = Console.ReadLine() ?? null;
+                                listSearch = phoneBL.SearchByPhoneInformation(searchPhone);
+                                if (listSearch == null)
+                                {
+                                    ConsoleUlts.ErrorAlert("Phone Not Found");
+                                    do
+                                    {
+                                        reEnterOrCancel = Utilities.Menu(null, null, menuOption);
+                                        switch (reEnterOrCancel)
+                                        {
+                                            case (int)ActivityEnum.SearchPhone.ReEnterPhoneInfo:
+                                                PressEnterTo("Re-enter Phone Infomation");
+                                                break;
+                                            case (int)ActivityEnum.SearchPhone.CancelOrder:
+                                                PressEnterTo("Back Previous Menu");
+                                                activeSearchPhone = false;
+                                                break;
+                                        }
+                                    } while (reEnterOrCancel != (int)ActivityEnum.SearchPhone.CancelOrder);
+                                }
+                                else
+                                {
+                                    Utilities.PhonePageHandle(listSearch);
+                                    int phoneId;
+                                    do
+                                    {
+                                        Console.Write("Input Phone ID To Add To Order: ");
+                                        int.TryParse(Console.ReadLine(), out phoneId);
+
+                                        if (phoneId <= 0 || phoneId > phones.Count())
+                                            ConsoleUlts.ErrorAlert("Invalid Phone ID, Please Try Again");
+
+                                    } while (phoneId <= 0 || phoneId > phones.Count());
+                                    return true;
+                                }
+                            } while (activeSearchPhone);
+                            break;
+                        case 2:
+                            active = false;
+                            break;
+                    }
+                }
+            }
+            else return false;
+            return true;
+        }
+        public static void HandleOrderMenuHandle(PhoneBL phoneBL)
+        {
+            bool active = true;
+
+            string[] menuItem = { "👉 Show order by paid status in day", "👉 Back To Previous Menu" };
+            while (active)
+            {
+                switch (Utilities.Menu(
+                    null,
+                    @"██   ██  █████  ███    ██ ██████  ██      ███████      ██████  ██████  ██████  ███████ ██████  
+██   ██ ██   ██ ████   ██ ██   ██ ██      ██          ██    ██ ██   ██ ██   ██ ██      ██   ██ 
+███████ ███████ ██ ██  ██ ██   ██ ██      █████       ██    ██ ██████  ██   ██ █████   ██████  
+██   ██ ██   ██ ██  ██ ██ ██   ██ ██      ██          ██    ██ ██   ██ ██   ██ ██      ██   ██ 
+██   ██ ██   ██ ██   ████ ██████  ███████ ███████      ██████  ██   ██ ██████  ███████ ██   ██ ", menuItem))
+                {
+                    case 1:
+                        ConsoleUlts.Title(null,
+                        @"███████ ██   ██  ██████  ██     ██      ██████  ██████  ██████  ███████ ██████  
+██      ██   ██ ██    ██ ██     ██     ██    ██ ██   ██ ██   ██ ██      ██   ██ 
+███████ ███████ ██    ██ ██  █  ██     ██    ██ ██████  ██   ██ █████   ██████  
+     ██ ██   ██ ██    ██ ██ ███ ██     ██    ██ ██   ██ ██   ██ ██      ██   ██ 
+███████ ██   ██  ██████   ███ ███       ██████  ██   ██ ██████  ███████ ██   ██ "
+                        );
+                        string orderId = "";
+                        Console.Write("Input order id:");
+                        orderId = Console.ReadLine();
+                        break;
+                    case 2:
+                        active = false;
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
     }
 }

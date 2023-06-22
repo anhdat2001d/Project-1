@@ -17,16 +17,16 @@ namespace PhoneStoreUI
             short mainChoose = 0;
             while (active)
             {
-                int loginAccount = ConsoleUlts.Login();
-                if (loginAccount == (int)E.LoginActivity.SellerAccount)
+                int loginAccount = Utilities.Login();
+                if (loginAccount == (int)ActivityEnum.Login.SellerAccount)
                 {
-                    Ults.ConsoleUlts.SellerMenuHandle(phoneBL);
+                    Ults.ConsoleUlts.SellerMenu(phoneBL);
                 }
-                else if (loginAccount == (int)E.LoginActivity.AccountantAccount)
+                else if (loginAccount == (int)ActivityEnum.Login.AccountantAccount)
                 {
                     // ConsoleUlts.AccountantMenuUI();
                 }
-                else if (loginAccount == (int)E.LoginActivity.Exit)
+                else if (loginAccount == (int)ActivityEnum.Login.Exit)
                 {
                     active = false;
                     ConsoleUlts.Notification("Exiting Suscess");
