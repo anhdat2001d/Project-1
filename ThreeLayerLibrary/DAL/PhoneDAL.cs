@@ -35,7 +35,7 @@ namespace DAL
             item.PhoneName = reader.GetString("Phone_Name");
             item.Brand = reader.GetString("Brand");
             item.Price = reader.GetDecimal("Price");
-            item.Platform = reader.GetString("Platform");
+            item.OS = reader.GetString("Platform");
             return item;
         }
         public List<Phone> GetAllItem()

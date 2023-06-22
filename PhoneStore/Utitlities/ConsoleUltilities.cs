@@ -53,13 +53,6 @@ namespace Ults
             }
 
         }
-        public static void Notification(string message) // thông báo
-        {
-            Console.WriteLine(message + "!");
-            Utilities.PressEnterTo("Continue");
-            if (message == "Invalid Choice!")
-                Console.Clear();
-        }
         public static void ErrorAlert(string errorMsg)
         {
             ConsoleUlts.RedForegroundColor();
@@ -77,6 +70,10 @@ namespace Ults
             ConsoleUlts.GreenForegroundColor();
             Console.WriteLine(successMsg.ToUpper() + "✔️");
             ConsoleUlts.ResetColor();
+        }
+        public static void PrintPhoneInformation(Phone phone)
+        {
+            Console.WriteLine("| {0, 10} | {1, 20} | {2, 15} | {3, 15} | {4, 15} |", phone.PhoneID, phone.PhoneName, phone.Brand, phone.Price, phone.OS);
         }
         public static void SellerMenu(PhoneBL phoneBL)
         {
@@ -107,5 +104,6 @@ namespace Ults
                 }
             }
         }
+        public static void AccountantMenu() {}
     }
 }

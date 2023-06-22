@@ -1,8 +1,8 @@
 namespace Enum
 {
-    public class E
+    public class ActivityEnum
     {
-        public enum LoginActivity
+        public enum Login
         {
             SellerAccount = 1,
             AccountantAccount = 2,

@@ -12,27 +12,21 @@ namespace PhoneStoreUI
     {
         static void Main()
         {
-            bool active = true, loginStatus;
             PhoneBL phoneBL = new PhoneBL();
-            short mainChoose = 0;
-            while (active)
+            int loginAccount;
+            do
             {
-                int loginAccount = Utilities.Login();
-                if (loginAccount == (int)ActivityEnum.Login.SellerAccount)
-                {
-                    Ults.ConsoleUlts.SellerMenu(phoneBL);
-                }
-                else if (loginAccount == (int)ActivityEnum.Login.AccountantAccount)
-                {
-                    // ConsoleUlts.AccountantMenuUI();
-                }
-                else if (loginAccount == (int)ActivityEnum.Login.Exit)
-                {
-                    active = false;
-                    ConsoleUlts.Notification("Exiting Suscess");
-                }
-                else ConsoleUlts.Notification("Invalid choice");
-            }
+                loginAccount = Utilities.LoginUlt();
+
+                if (loginAccount == (int)ActivityEnum.Login.SellerAccount) ConsoleUlts.SellerMenu(phoneBL);
+
+                else if (loginAccount == (int)ActivityEnum.Login.AccountantAccount) ConsoleUlts.AccountantMenu();
+
+                else if (loginAccount == (int)ActivityEnum.Login.Exit) return;
+
+                else ConsoleUlts.ErrorAlert("Invalid choice");
+
+            } while (true);
         }
     }
 }
