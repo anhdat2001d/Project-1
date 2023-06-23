@@ -10,7 +10,7 @@ public class CustomerDAL{
         output.CustomerName = reader.GetString("Customer_Name");
         output.PhoneNumber = reader.GetString("Phone_Number");
         output.Address = reader.GetString("Address");
-        // output.Job = reader.GetString("Job");
+        output.Job = reader.GetString("Job");
         return output;
     }
     public List<Customer> GetCustomerByName(string name){
@@ -45,6 +45,22 @@ public class CustomerDAL{
         catch{}
         return output;
     }
+    public Customer GetCustomerByID(int id){
+        Customer output = new Customer();
+        try{
+            query = @"select * from customers where customer_id = @id;";
+            MySqlCommand command = new MySqlCommand(query, connection);
+            command.Parameters.Clear();
+            command.Parameters.AddWithValue("@id", id);
+            MySqlDataReader reader = command.ExecuteReader();
+            if(reader.Read()){
+                output = GetCustomer(reader);
+            }
+            reader.Close();
+        }
+        catch{}
+        return output;
+    }
     public bool AddCustomer(Customer newcustomer){
         try{
             query = @"insert into customers(Customer_Name, Phone_Number, Address, Job) value(@name, @phonenumber, @address, @job);";
@@ -53,7 +69,7 @@ public class CustomerDAL{
             command.Parameters.AddWithValue("@name", newcustomer.CustomerName);
             command.Parameters.AddWithValue("@phonenumber", newcustomer.PhoneNumber);
             command.Parameters.AddWithValue("@address", newcustomer.Address);
-            // command.Parameters.AddWithValue("@job", newcustomer.Job);
+            command.Parameters.AddWithValue("@job", newcustomer.Job);
             command.ExecuteNonQuery();
         }
         catch{

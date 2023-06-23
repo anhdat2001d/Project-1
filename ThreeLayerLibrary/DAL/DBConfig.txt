@@ -1,1 +1,0 @@
-server=localhost;user id=root;password=78789898Tia;port=3306;database=phonestore;IgnoreCommandTransaction=true;

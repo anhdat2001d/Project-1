@@ -1,6 +1,6 @@
 using MySqlConnector;
 using Persistence;
-namespace DAL;
+namespace DAL{
 public class StaffDAL{
     private MySqlConnection connection = DbConfig.GetConnection();
     private string query = "";
@@ -33,4 +33,8 @@ public class StaffDAL{
         output.TitleID = reader.GetInt32("Title_ID");
         return output;
     }
+    public string MD5(string input){
+        return "";
+    }
+}
 }
